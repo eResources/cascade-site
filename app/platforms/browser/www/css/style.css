@@ -1,4 +1,4 @@
-/* Font styles. */
+﻿/* Font styles. */
 @font-face {
     font-family: 'Captureit';
     src: url('../fonts/capture_it-webfont.eot');
@@ -364,7 +364,7 @@ div#content-bottom p {
 }
 
 p.additional-description {
-	font-family: 'Source Sans Pro';
+	font-family: 'Source Sans Pro',arial,sans-serif;
     font-size: 18px;
     line-height: 20px;
 }

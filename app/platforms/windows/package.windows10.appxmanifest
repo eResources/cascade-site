@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="com.cascadehardwood.cascadegradeselector" Publisher="CN=$username$" Version="1.2.8.0" />
+    <Identity Name="com.cascadehardwood.cascadegradeselector" Publisher="CN=$username$" Version="1.2.9.0" />
     <mp:PhoneIdentity PhoneProductId="1c0c9970-3119-11e6-8c55-8777af2b4710" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>Cascade Grade Selector</DisplayName>
