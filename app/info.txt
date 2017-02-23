@@ -1,11 +1,11 @@
-Node version: v5.10.1
+Node version: v7.5.0
 
-Cordova version: 6.1.1
+Cordova version: 6.4.0
 
 Config.xml file: 
 
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.cascadegradeselector" version="1.2.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.cascadehardwood.cascadegradeselector" version="1.2.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Cascade Grade Selector</name>
     <description>
         Cascade Hardwood Grade Selector
@@ -14,9 +14,11 @@ Config.xml file:
         Cascade Hardwood
     </author>
     <content src="index.html" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
+    <preference name="windows-target-version" value="10.0" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
@@ -25,31 +27,33 @@ Config.xml file:
     <preference name="EnableViewportScale" value="true" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false"/>
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
-    <gap:plugin name="org.apache.cordova.battery-status" />
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.media-capture" />
-    <gap:plugin name="org.apache.cordova.console" />
-    <gap:plugin name="org.apache.cordova.contacts" />
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.device-motion" />
-    <gap:plugin name="org.apache.cordova.device-orientation" />
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="org.apache.cordova.media" />
-    <gap:plugin name="org.apache.cordova.network-information" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-    <gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" />
-    <icon src="www/icon.png" />
+    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <plugin name="cordova-plugin-battery-status"  source="npm" />
+    <plugin name="cordova-plugin-camera"  source="npm" />
+    <plugin name="cordova-plugin-media-capture"  source="npm" />
+    <plugin name="cordova-plugin-console"  source="npm" />
+    <plugin name="cordova-plugin-contacts"  source="npm" />
+    <plugin name="cordova-plugin-device"  source="npm" />
+    <plugin name="cordova-plugin-device-motion"  source="npm" />
+    <plugin name="cordova-plugin-device-orientation"  source="npm" />
+    <plugin name="cordova-plugin-dialogs"  source="npm" />
+    <plugin name="cordova-plugin-file"  source="npm" />
+    <plugin name="cordova-plugin-file-transfer"  source="npm" />
+    <plugin name="cordova-plugin-geolocation"  source="npm" />
+    <plugin name="cordova-plugin-globalization"  source="npm"/>
+    <plugin name="cordova-plugin-media"  source="npm" />
+    <plugin name="cordova-plugin-network-information"  source="npm" />
+    <plugin name="cordova-plugin-splashscreen"  source="npm" />
+    <plugin name="cordova-plugin-vibration"  source="npm" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" source="npm" />
+    <icon src="icon.png" />
     <gap:config-file overwrite="true" parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
         <false />
     </gap:config-file>
@@ -66,23 +70,67 @@ Config.xml file:
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <splash qualifier="ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+        <splash qualifier="mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+        <splash qualifier="hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+        <splash qualifier="xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <platform name="windows">
+        <icon src="www/res/windows/logo.png" width="150" height="150" />
+        <icon src="www/res/windows/smalllogo.png" width="30" height="30" />
+        <icon src="www/res/windows/storelogo.png" width="50" height="50" />
+        <icon src="www/res/windows/Square44x44Logo.scale-100.png" width="44" height="44" />
+        <icon src="www/res/windows/Square44x44Logo.scale-240.png" width="106" height="106" />
+        <icon src="www/res/windows/Square70x70Logo.scale-100.png" width="70" height="70" />
+        <icon src="www/res/windows/Square71x71Logo.scale-100.png" width="71" height="71" />
+        <icon src="www/res/windows/Square71x71Logo.scale-240.png" width="170" height="170" />
+        <icon src="www/res/windows/Square150x150Logo.scale-240.png" width="360" height="360" />
+        <icon src="www/res/windows/Square310x310Logo.scale-100.png" width="310" height="310" />
+        <icon src="www/res/windows/Wide310x150Logo.scale-100.png" width="310" height="150" />
+        <icon src="www/res/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
+
+        <splash src="www/res/screen/windows/splashscreen.png" width="620" height="300"/>
+        <splash src="www/res/screen/windows/splashscreenphone.png" width="1152" height="1920"/>
+    </platform>
     <engine name="ios" spec="~4.0.1" />
+    <engine name="windows" spec="~4.3.2" />
 </widget>
 
 
 Plugins: 
 
-cordova-plugin-inappbrowser,cordova-plugin-whitelist
+cordova-plugin-battery-status,cordova-plugin-camera,cordova-plugin-compat,cordova-plugin-console,cordova-plugin-contacts,cordova-plugin-device,cordova-plugin-device-motion,cordova-plugin-device-orientation,cordova-plugin-dialogs,cordova-plugin-file,cordova-plugin-file-transfer,cordova-plugin-geolocation,cordova-plugin-globalization,cordova-plugin-inappbrowser,cordova-plugin-media,cordova-plugin-media-capture,cordova-plugin-network-information,cordova-plugin-splashscreen,cordova-plugin-vibration,cordova-plugin-whitelist,de.appplant.cordova.plugin.hidden-statusbar-overlay
+
+Android platform:
+
+Available Android targets:
+----------
+id: 1 or "android-23"
+     Name: Android 6.0
+     Type: Platform
+     API level: 23
+     Revision: 3
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 2 or "android-25"
+     Name: Android 7.1.1
+     Type: Platform
+     API level: 25
+     Revision: 3
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin320x300, AndroidWearRoundChin360x325, AndroidWearRoundChin360x326, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare240x240, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin320x300, AndroidWearRoundChin360x325, AndroidWearRoundChin360x326, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare240x240, AndroidWearSquare320x320
+ Tag/ABIs : android-tv/x86, android-wear/armeabi-v7a, android-wear/x86, google_apis/x86, google_apis/x86_64
 
 
 
 iOS platform:
 
-Xcode 7.3
-Build version 7D175
+Xcode 8.2.1
+Build version 8C1002
+
+
 

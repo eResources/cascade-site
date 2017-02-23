@@ -18,7 +18,59 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        }
+    }
 }
