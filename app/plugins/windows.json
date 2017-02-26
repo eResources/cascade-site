@@ -60,9 +60,6 @@
         },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "Cascade Grade Selector"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
         }
     },
     "dependent_plugins": {

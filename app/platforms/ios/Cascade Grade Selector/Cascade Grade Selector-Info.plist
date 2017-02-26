@@ -62,11 +62,8 @@
     <false/>
     <key>NSAppTransportSecurity</key>
     <dict>
-      <key>NSExceptionDomains</key>
-      <dict>
-        <key>fonts.gstatic.com</key>
-        <dict/>
-      </dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
     </dict>
   </dict>
 </plist>

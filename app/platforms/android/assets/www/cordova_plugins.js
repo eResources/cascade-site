@@ -161,8 +161,7 @@ module.exports.metadata =
     "cordova-plugin-globalization": "1.0.5",
     "cordova-plugin-network-information": "1.3.1",
     "cordova-plugin-splashscreen": "3.2.2",
-    "cordova-plugin-vibration": "2.1.3",
-    "cordova-plugin-whitelist": "1.3.1"
+    "cordova-plugin-vibration": "2.1.3"
 };
 // BOTTOM OF METADATA
 });

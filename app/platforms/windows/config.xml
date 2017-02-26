@@ -14,10 +14,13 @@
     <gap:config-file mode="merge" parent="/manifest" platform="android">
         <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     </gap:config-file>
-    <access origin="https://fonts.gstatic.com" />
-    <allow-navigation href="http://*/*" />
-    <allow-navigation href="https://*/*" />
-    <access launch-external="yes" origin="mailto:*" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />

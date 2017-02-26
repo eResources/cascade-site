@@ -28,9 +28,6 @@
                     <m3:Rotation Preference="portrait" />
                 </m3:InitialRotationPreference>
             </m3:VisualElements>
-            <ApplicationContentUriRules>
-                <Rule Match="https://fonts.gstatic.com" Type="include" />
-            </ApplicationContentUriRules>
         </Application>
     </Applications>
     <Capabilities>
