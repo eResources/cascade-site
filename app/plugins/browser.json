@@ -25,9 +25,6 @@
         "cordova-plugin-media": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
@@ -59,6 +56,9 @@
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         }
     },

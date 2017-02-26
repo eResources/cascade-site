@@ -45,10 +45,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
                         },
@@ -90,6 +86,10 @@
                         },
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -179,9 +179,6 @@
             "MICROPHONE_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
@@ -214,6 +211,9 @@
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         }
     },
@@ -620,15 +620,6 @@
             ]
         },
         {
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        },
-        {
             "file": "plugins/cordova-plugin-device/www/device.js",
             "id": "cordova-plugin-device.device",
             "pluginId": "cordova-plugin-device",
@@ -788,6 +779,15 @@
             "merges": [
                 "navigator.notification",
                 "navigator"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
             ]
         }
     ]

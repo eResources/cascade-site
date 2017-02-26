@@ -75,14 +75,6 @@
             "MICROPHONE_USAGE_DESCRIPTION": " "
         }
     },
-    "cordova-plugin-inappbrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-inappbrowser@1.6.1"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-device": {
         "source": {
             "type": "registry",
@@ -158,7 +150,7 @@
     "cordova-plugin-splashscreen": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-splashscreen@3.2.2"
+            "id": "cordova-plugin-splashscreen@~3.2.2"
         },
         "is_top_level": true,
         "variables": {}
@@ -167,6 +159,14 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-vibration"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@1.6.1"
         },
         "is_top_level": true,
         "variables": {}

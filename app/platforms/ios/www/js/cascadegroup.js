@@ -21,7 +21,7 @@
 	var html = '<div id="popup" class="modal-box">';
 	    html += '<header><a href="#" class="js-modal-close close">×</a><h2 class="title-box">Want to know more?</h2></header>';
 	    html += '<div class="modal-body">';
-	    html += '<div class="contact-phone"><a href="tel:1-800-228-3065"><div class="icon-contact-phone"></div><label>Give us a ring:<br />800-228-3065</label></a></div><div class="contact-email"><a href="mailto:info@CHGsales.com"><div class="icon-contact-email"></div><label>Drop us an email</label></a></div><div class="visit-website"><a href="http://www.cascadehardwood.com" target="_system"><div class="icon-visit-website"></div><label>Visit our website</label></a></div>';
+	    html += '<div class="contact-phone"><a href="tel:1-800-228-3065" target="_system"><div class="icon-contact-phone"></div><label>Give us a ring:<br />800-228-3065</label></a></div><div class="contact-email"><a href="mailto:info@CHGsales.com" target="_system"><div class="icon-contact-email"></div><label>Drop us an email</label></a></div><div class="visit-website"><a href="http://www.cascadehardwood.com" target="_system"><div class="icon-visit-website"></div><label>Visit our website</label></a></div>';
 	    html += '</div></div>';
 	    if (typeof WinJS !== "undefined") {
 	    		$('div#content').append(window.toStaticHTML(html));
@@ -94,7 +94,7 @@
 	function add_emailto(){
 		// Adding mailto
 		if ($('div.side-cta p a').length != 0) {
-	    	$('div.side-cta p a').attr("href", "mailto:info@chgsales.com");
+	    	$('div.side-cta p a').attr("href", "mailto:info@chgsales.com").attr("target", "_system");
 		}
 	}
 	setTimeout(add_emailto, 3000);

@@ -401,15 +401,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
@@ -569,6 +560,15 @@ module.exports = [
         "merges": [
             "navigator.notification",
             "navigator"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
         ]
     }
 ];
