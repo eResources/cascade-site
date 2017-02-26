@@ -7,19 +7,7 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
         "de.appplant.cordova.plugin.hidden-statusbar-overlay": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
-        "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
         "cordova-plugin-camera": {
@@ -28,13 +16,25 @@
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
         "cordova-plugin-device-motion": {
@@ -46,22 +46,22 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "Cascade Grade Selector"
-        },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "Cascade Grade Selector"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "Cascade Grade Selector"
         }
     },

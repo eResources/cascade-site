@@ -1,53 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js",
-        "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "merges": [
-            ""
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "pluginId": "cordova-plugin-splashscreen",
-        "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
-        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
-        "pluginId": "cordova-plugin-splashscreen",
-        "merges": [
-            ""
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-        "id": "cordova-plugin-battery-status.battery",
-        "pluginId": "cordova-plugin-battery-status",
-        "clobbers": [
-            "navigator.battery"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-battery-status/src/windows/BatteryProxy.js",
-        "id": "cordova-plugin-battery-status.Battery",
-        "pluginId": "cordova-plugin-battery-status",
-        "runs": true
-    },
-    {
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "id": "cordova-plugin-camera.Camera",
         "pluginId": "cordova-plugin-camera",
@@ -333,22 +286,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-console/www/logger.js",
-        "id": "cordova-plugin-console.logger",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "cordova.logger"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-        "id": "cordova-plugin-console.console",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "console"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-contacts/www/contacts.js",
         "id": "cordova-plugin-contacts.contacts",
         "pluginId": "cordova-plugin-contacts",
@@ -434,6 +371,71 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+        "id": "cordova-plugin-file-transfer.FileTransferError",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.FileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/src/windows/FileTransferProxy.js",
+        "id": "cordova-plugin-file-transfer.FileTransferProxy",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            ""
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-media/www/MediaError.js",
+        "id": "cordova-plugin-media.MediaError",
+        "pluginId": "cordova-plugin-media",
+        "clobbers": [
+            "window.MediaError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-media/www/Media.js",
+        "id": "cordova-plugin-media.Media",
+        "pluginId": "cordova-plugin-media",
+        "clobbers": [
+            "window.Media"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-media/src/windows/MediaProxy.js",
+        "id": "cordova-plugin-media.MediaProxy",
+        "pluginId": "cordova-plugin-media",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js",
+        "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "merges": [
+            ""
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
@@ -447,6 +449,36 @@ module.exports = [
         "pluginId": "cordova-plugin-device",
         "merges": [
             ""
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+        "id": "cordova-plugin-battery-status.battery",
+        "pluginId": "cordova-plugin-battery-status",
+        "clobbers": [
+            "navigator.battery"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-battery-status/src/windows/BatteryProxy.js",
+        "id": "cordova-plugin-battery-status.Battery",
+        "pluginId": "cordova-plugin-battery-status",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/logger.js",
+        "id": "cordova-plugin-console.logger",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "cordova.logger"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+        "id": "cordova-plugin-console.console",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "console"
         ]
     },
     {
@@ -522,30 +554,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
-        "id": "cordova-plugin-file-transfer.FileTransferError",
-        "pluginId": "cordova-plugin-file-transfer",
-        "clobbers": [
-            "window.FileTransferError"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
-        "id": "cordova-plugin-file-transfer.FileTransfer",
-        "pluginId": "cordova-plugin-file-transfer",
-        "clobbers": [
-            "window.FileTransfer"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-file-transfer/src/windows/FileTransferProxy.js",
-        "id": "cordova-plugin-file-transfer.FileTransferProxy",
-        "pluginId": "cordova-plugin-file-transfer",
-        "clobbers": [
-            ""
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js",
         "id": "cordova-plugin-geolocation.GeolocationProxy",
         "pluginId": "cordova-plugin-geolocation",
@@ -606,30 +614,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-media/www/MediaError.js",
-        "id": "cordova-plugin-media.MediaError",
-        "pluginId": "cordova-plugin-media",
-        "clobbers": [
-            "window.MediaError"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-media/www/Media.js",
-        "id": "cordova-plugin-media.Media",
-        "pluginId": "cordova-plugin-media",
-        "clobbers": [
-            "window.Media"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-media/src/windows/MediaProxy.js",
-        "id": "cordova-plugin-media.MediaProxy",
-        "pluginId": "cordova-plugin-media",
-        "merges": [
-            ""
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-network-information/www/network.js",
         "id": "cordova-plugin-network-information.network",
         "pluginId": "cordova-plugin-network-information",
@@ -653,6 +637,22 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "merges": [
+            ""
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-vibration/www/vibration.js",
         "id": "cordova-plugin-vibration.notification",
         "pluginId": "cordova-plugin-vibration",
@@ -671,27 +671,27 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-inappbrowser": "1.4.0",
-    "cordova-plugin-whitelist": "1.2.1",
     "de.appplant.cordova.plugin.hidden-statusbar-overlay": "1.2.0",
-    "cordova-plugin-splashscreen": "3.2.2",
-    "cordova-plugin-battery-status": "1.2.2",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-camera": "2.3.1",
     "cordova-plugin-file": "4.3.1",
     "cordova-plugin-media-capture": "1.4.1",
-    "cordova-plugin-console": "1.0.5",
     "cordova-plugin-contacts": "2.2.1",
+    "cordova-plugin-file-transfer": "1.6.1",
+    "cordova-plugin-media": "2.4.1",
+    "cordova-plugin-inappbrowser": "1.6.1",
     "cordova-plugin-device": "1.1.4",
+    "cordova-plugin-battery-status": "1.2.2",
+    "cordova-plugin-console": "1.0.5",
     "cordova-plugin-device-motion": "1.2.3",
     "cordova-plugin-device-orientation": "1.0.5",
     "cordova-plugin-dialogs": "1.3.1",
-    "cordova-plugin-file-transfer": "1.6.1",
     "cordova-plugin-geolocation": "2.4.1",
     "cordova-plugin-globalization": "1.0.5",
-    "cordova-plugin-media": "2.4.1",
     "cordova-plugin-network-information": "1.3.1",
-    "cordova-plugin-vibration": "2.1.3"
+    "cordova-plugin-splashscreen": "3.2.2",
+    "cordova-plugin-vibration": "2.1.3",
+    "cordova-plugin-whitelist": "1.3.1"
 };
 // BOTTOM OF METADATA
 });

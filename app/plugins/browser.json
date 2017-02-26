@@ -7,17 +7,8 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.phonegap.cascadegradeselector"
-        },
         "de.appplant.cordova.plugin.hidden-statusbar-overlay": {
             "PACKAGE_NAME": "com.phonegap.cascadegradeselector"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
-        "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
@@ -25,13 +16,25 @@
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
         "cordova-plugin-device-motion": {
@@ -43,22 +46,22 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
-        },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cascadehardwood.cascadegradeselector"
         }
     },

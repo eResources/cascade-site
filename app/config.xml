@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cascadehardwood.cascadegradeselector" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.cascadehardwood.cascadegradeselector" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Cascade Grade Selector</name>
     <description>
         Cascade Hardwood Grade Selector
@@ -9,7 +9,6 @@
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-6.5.0" />
-    <preference name="android-build-tool" value="gradle" /> 
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
@@ -22,26 +21,28 @@
     <preference name="EnableViewportScale" value="true" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreenDelay" value="1000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <plugin name="cordova-plugin-battery-status"  source="npm" />
-    <plugin name="cordova-plugin-console"  source="npm" />
-    <plugin name="cordova-plugin-device"  source="npm" />
-    <plugin name="cordova-plugin-device-motion"  source="npm" />
-    <plugin name="cordova-plugin-device-orientation"  source="npm" />
-    <plugin name="cordova-plugin-dialogs"  source="npm" />
-    <plugin name="cordova-plugin-geolocation"  source="npm" />
-    <plugin name="cordova-plugin-globalization"  source="npm"/>
-    <plugin name="cordova-plugin-network-information"  source="npm" />
-    <plugin name="cordova-plugin-splashscreen"  source="npm" />
-    <plugin name="cordova-plugin-vibration"  source="npm" />
-    <plugin name="cordova-plugin-whitelist" source="npm" />
-    <icon src="icon.png" />
+    <plugin name="cordova-plugin-console" spec="~1.0.5" />
+    <plugin name="cordova-plugin-battery-status" spec="~1.2.2" />
+    <plugin name="cordova-plugin-device" spec="~1.1.4" />
+    <plugin name="cordova-plugin-device-motion" spec="~1.2.3" />
+    <plugin name="cordova-plugin-device-orientation" spec="~1.0.5" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.1">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+    <plugin name="cordova-plugin-globalization" spec="~1.0.5" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.6.1" />
+    <plugin name="cordova-plugin-network-information" spec="~1.3.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.2" />
+    <plugin name="cordova-plugin-vibration" spec="~2.1.3" />
+    <plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" spec="https://github.com/katzer/cordova-plugin-hidden-statusbar-overlay" />
     <gap:config-file overwrite="true" parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
         <false />
     </gap:config-file>
@@ -49,8 +50,6 @@
         <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     </gap:config-file>
     <access origin="*" />
-    <allow-intent href="http://www.cascadehardwood.com" />
-    <allow-navigation href="http://www.cascadehardwood.com" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -58,7 +57,8 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
-        <allow-intent href="market:*" />
+        <allow-navigation href="http://www.cascadehardwood.com/*" />
+        <allow-navigation href="http://www.cascadehardwood.com/*" />
         <splash qualifier="ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
         <splash qualifier="mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
         <splash qualifier="hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
@@ -68,23 +68,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <platform name="windows">
-        <icon src="www/res/windows/logo.png" width="150" height="150" />
-        <icon src="www/res/windows/smalllogo.png" width="30" height="30" />
-        <icon src="www/res/windows/storelogo.png" width="50" height="50" />
-        <icon src="www/res/windows/Square44x44Logo.scale-100.png" width="44" height="44" />
-        <icon src="www/res/windows/Square44x44Logo.scale-240.png" width="106" height="106" />
-        <icon src="www/res/windows/Square70x70Logo.scale-100.png" width="70" height="70" />
-        <icon src="www/res/windows/Square71x71Logo.scale-100.png" width="71" height="71" />
-        <icon src="www/res/windows/Square71x71Logo.scale-240.png" width="170" height="170" />
-        <icon src="www/res/windows/Square150x150Logo.scale-240.png" width="360" height="360" />
-        <icon src="www/res/windows/Square310x310Logo.scale-100.png" width="310" height="310" />
-        <icon src="www/res/windows/Wide310x150Logo.scale-100.png" width="310" height="150" />
-        <icon src="www/res/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
-
-        <splash src="www/res/screen/windows/splashscreen.png" width="620" height="300"/>
-        <splash src="www/res/screen/windows/splashscreenphone.png" width="1152" height="1920"/>
-    </platform>
     <engine name="ios" spec="~4.0.1" />
     <engine name="windows" spec="~4.3.2" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.1" />
 </widget>

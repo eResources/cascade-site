@@ -1,36 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
         "file": "plugins/de.appplant.cordova.plugin.hidden-statusbar-overlay/www/hidden-statusbar-overlay.js",
         "id": "de.appplant.cordova.plugin.hidden-statusbar-overlay.HiddenStatusbarOverlay",
         "pluginId": "de.appplant.cordova.plugin.hidden-statusbar-overlay",
         "clobbers": [
             "plugin.statusbarOverlay"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "pluginId": "cordova-plugin-splashscreen",
-        "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-        "id": "cordova-plugin-battery-status.battery",
-        "pluginId": "cordova-plugin-battery-status",
-        "clobbers": [
-            "navigator.battery"
         ]
     },
     {
@@ -301,22 +276,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-        "id": "cordova-plugin-console.console",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "console"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-console/www/logger.js",
-        "id": "cordova-plugin-console.logger",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "cordova.logger"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-contacts/www/contacts.js",
         "id": "cordova-plugin-contacts.contacts",
         "pluginId": "cordova-plugin-contacts",
@@ -410,11 +369,76 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+        "id": "cordova-plugin-file-transfer.FileTransferError",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.FileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-media/www/MediaError.js",
+        "id": "cordova-plugin-media.MediaError",
+        "pluginId": "cordova-plugin-media",
+        "clobbers": [
+            "window.MediaError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-media/www/Media.js",
+        "id": "cordova-plugin-media.Media",
+        "pluginId": "cordova-plugin-media",
+        "clobbers": [
+            "window.Media"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
         "clobbers": [
             "device"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+        "id": "cordova-plugin-battery-status.battery",
+        "pluginId": "cordova-plugin-battery-status",
+        "clobbers": [
+            "navigator.battery"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+        "id": "cordova-plugin-console.console",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "console"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/logger.js",
+        "id": "cordova-plugin-console.logger",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "cordova.logger"
         ]
     },
     {
@@ -466,22 +490,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
-        "id": "cordova-plugin-file-transfer.FileTransferError",
-        "pluginId": "cordova-plugin-file-transfer",
-        "clobbers": [
-            "window.FileTransferError"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
-        "id": "cordova-plugin-file-transfer.FileTransfer",
-        "pluginId": "cordova-plugin-file-transfer",
-        "clobbers": [
-            "window.FileTransfer"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
         "id": "cordova-plugin-geolocation.Coordinates",
         "pluginId": "cordova-plugin-geolocation",
@@ -530,22 +538,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-media/www/MediaError.js",
-        "id": "cordova-plugin-media.MediaError",
-        "pluginId": "cordova-plugin-media",
-        "clobbers": [
-            "window.MediaError"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-media/www/Media.js",
-        "id": "cordova-plugin-media.Media",
-        "pluginId": "cordova-plugin-media",
-        "clobbers": [
-            "window.Media"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-network-information/www/network.js",
         "id": "cordova-plugin-network-information.network",
         "pluginId": "cordova-plugin-network-information",
@@ -560,6 +552,14 @@ module.exports = [
         "pluginId": "cordova-plugin-network-information",
         "clobbers": [
             "Connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
         ]
     },
     {

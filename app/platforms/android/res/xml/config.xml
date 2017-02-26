@@ -1,5 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cascadehardwood.cascadegradeselector" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.cascadehardwood.cascadegradeselector" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Cascade Grade Selector</name>
     <description>
         Cascade Hardwood Grade Selector
@@ -8,7 +46,6 @@
         Cascade Hardwood
     </author>
     <content src="index.html" />
-    <icon src="icon.png" />
     <gap:config-file overwrite="true" parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
         <false />
     </gap:config-file>
@@ -16,22 +53,20 @@
         <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     </gap:config-file>
     <access origin="*" />
-    <allow-intent href="http://www.cascadehardwood.com" />
-    <allow-navigation href="http://www.cascadehardwood.com" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-intent href="market:*" />
+    <allow-navigation href="mailto:*" />
+    <allow-navigation href="http://www.cascadehardwood.com/*" />
     <splash qualifier="ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
     <splash qualifier="mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
     <splash qualifier="hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
     <splash qualifier="xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="phonegap-version" value="cli-6.5.0" />
-    <preference name="android-build-tool" value="gradle" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />

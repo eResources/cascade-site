@@ -18,6 +18,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CordovaApp.Windows10", "Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vibration", "..\..\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj", "{D4F9F695-ECD5-49FC-B58A-B1E0E754E159}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vibration", "..\..\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj", "{D4F9F695-ECD5-49FC-B58A-B1E0E754E159}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CordovaApp.projitems*{f9b0ae20-c91c-42b9-9c6e-d3bc28b4509e}*SharedItemsImports = 5

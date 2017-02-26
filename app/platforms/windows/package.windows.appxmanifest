@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-    <Identity Name="com.cascadehardwood.cascadegradeselector" Publisher="CN=$username$" Version="1.3.0.0" />
+    <Identity Name="com.cascadehardwood.cascadegradeselector" Publisher="CN=$username$" Version="1.4.0.0" />
     <Properties>
         <DisplayName>Cascade Grade Selector</DisplayName>
         <PublisherDisplayName>Cascade Hardwood</PublisherDisplayName>
@@ -28,6 +28,9 @@
                     <m2:Rotation Preference="portrait" />
                 </m2:InitialRotationPreference>
             </m2:VisualElements>
+            <ApplicationContentUriRules>
+                <Rule Match="https://fonts.gstatic.com" Type="include" />
+            </ApplicationContentUriRules>
         </Application>
     </Applications>
     <Capabilities>

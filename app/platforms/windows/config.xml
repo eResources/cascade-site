@@ -1,19 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cascadehardwood.cascadegradeselector" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
-    <icon height="150" src="www/res/windows/logo.png" width="150" />
-    <icon height="30" src="www/res/windows/smalllogo.png" width="30" />
-    <icon height="50" src="www/res/windows/storelogo.png" width="50" />
-    <icon height="44" src="www/res/windows/Square44x44Logo.scale-100.png" width="44" />
-    <icon height="106" src="www/res/windows/Square44x44Logo.scale-240.png" width="106" />
-    <icon height="70" src="www/res/windows/Square70x70Logo.scale-100.png" width="70" />
-    <icon height="71" src="www/res/windows/Square71x71Logo.scale-100.png" width="71" />
-    <icon height="170" src="www/res/windows/Square71x71Logo.scale-240.png" width="170" />
-    <icon height="360" src="www/res/windows/Square150x150Logo.scale-240.png" width="360" />
-    <icon height="310" src="www/res/windows/Square310x310Logo.scale-100.png" width="310" />
-    <icon height="150" src="www/res/windows/Wide310x150Logo.scale-100.png" width="310" />
-    <icon height="360" src="www/res/windows/Wide310x150Logo.scale-240.png" width="744" />
-    <splash height="300" src="www/res/screen/windows/splashscreen.png" width="620" />
-    <splash height="1920" src="www/res/screen/windows/splashscreenphone.png" width="1152" />
+<widget id="com.cascadehardwood.cascadegradeselector" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Cascade Grade Selector</name>
     <description>
         Cascade Hardwood Grade Selector
@@ -22,21 +8,17 @@
         Cascade Hardwood
     </author>
     <content src="index.html" />
-    <icon src="icon.png" />
     <gap:config-file overwrite="true" parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
         <false />
     </gap:config-file>
     <gap:config-file mode="merge" parent="/manifest" platform="android">
         <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     </gap:config-file>
-    <access origin="*" />
-    <allow-intent href="http://www.cascadehardwood.com" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
+    <access origin="https://fonts.gstatic.com" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <access launch-external="yes" origin="mailto:*" />
     <preference name="phonegap-version" value="cli-6.5.0" />
-    <preference name="android-build-tool" value="gradle" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />

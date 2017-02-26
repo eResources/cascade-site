@@ -47,6 +47,11 @@
     _callbackIdPattern = nil;
 }
 
+- (id)settingForKey:(NSString*)key
+{
+    return [self.commandDelegate.settings objectForKey:[key lowercaseString]];
+}
+
 - (void)onReset
 {
     [self close:nil];
@@ -137,8 +142,16 @@
     }
 
     if (self.inAppBrowserViewController == nil) {
-        NSString* originalUA = [CDVUserAgentUtil originalUserAgent];
-        self.inAppBrowserViewController = [[CDVInAppBrowserViewController alloc] initWithUserAgent:originalUA prevUserAgent:[self.commandDelegate userAgent] browserOptions: browserOptions];
+        NSString* userAgent = [CDVUserAgentUtil originalUserAgent];
+        NSString* overrideUserAgent = [self settingForKey:@"OverrideUserAgent"];
+        NSString* appendUserAgent = [self settingForKey:@"AppendUserAgent"];
+        if(overrideUserAgent){
+            userAgent = overrideUserAgent;
+        }
+        if(appendUserAgent){
+            userAgent = [userAgent stringByAppendingString: appendUserAgent];
+        }
+        self.inAppBrowserViewController = [[CDVInAppBrowserViewController alloc] initWithUserAgent:userAgent prevUserAgent:[self.commandDelegate userAgent] browserOptions: browserOptions];
         self.inAppBrowserViewController.navigationDelegate = self;
 
         if ([self.viewController conformsToProtocol:@protocol(CDVScreenOrientationDelegate)]) {
@@ -218,6 +231,7 @@
                                    initWithRootViewController:self.inAppBrowserViewController];
     nav.orientationDelegate = self.inAppBrowserViewController;
     nav.navigationBarHidden = YES;
+    nav.modalPresentationStyle = self.inAppBrowserViewController.modalPresentationStyle;
 
     __weak CDVInAppBrowser* weakSelf = self;
 
@@ -225,6 +239,30 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         if (weakSelf.inAppBrowserViewController != nil) {
             [weakSelf.viewController presentViewController:nav animated:YES completion:nil];
+        }
+    });
+}
+
+- (void)hide:(CDVInvokedUrlCommand*)command
+{
+    if (self.inAppBrowserViewController == nil) {
+        NSLog(@"Tried to hide IAB after it was closed.");
+        return;
+
+
+    }
+    if (_previousStatusBarStyle == -1) {
+        NSLog(@"Tried to hide IAB while already hidden");
+        return;
+    }
+
+    _previousStatusBarStyle = [UIApplication sharedApplication].statusBarStyle;
+
+    // Run later to avoid the "took a long time" log message.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (self.inAppBrowserViewController != nil) {
+            _previousStatusBarStyle = -1;
+            [self.viewController dismissViewControllerAnimated:YES completion:nil];
         }
     });
 }
@@ -248,11 +286,8 @@
 
 - (void)openInSystem:(NSURL*)url
 {
-    if ([[UIApplication sharedApplication] canOpenURL:url]) {
-        [[UIApplication sharedApplication] openURL:url];
-    } else { // handle any custom schemes to plugins
-        [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
-    }
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 // This is a helper method for the inject{Script|Style}{Code|File} API calls, which
@@ -617,7 +652,7 @@
     // the advantage of using UIBarButtonSystemItemDone is the system will localize it for you automatically
     // but, if you want to set this yourself, knock yourself out (we can't set the title for a system Done button, so we have to create a new one)
     self.closeButton = nil;
-    self.closeButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(close)];
+    self.closeButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(close)];
     self.closeButton.enabled = YES;
     self.closeButton.tintColor = [UIColor colorWithRed:60.0 / 255.0 green:136.0 / 255.0 blue:230.0 / 255.0 alpha:1];
 
@@ -745,7 +780,7 @@
 
 - (void)viewDidUnload
 {
-    [self.webView loadHTMLString:@"" baseURL: [NSURL URLWithString:@"http://"]];
+    [self.webView loadHTMLString:nil baseURL:nil];
     [CDVUserAgentUtil releaseLock:&_userAgentLockToken];
     [super viewDidUnload];
 }
@@ -1041,7 +1076,7 @@
     return YES;
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+- (NSUInteger)supportedInterfaceOrientations
 {
     if ((self.orientationDelegate != nil) && [self.orientationDelegate respondsToSelector:@selector(supportedInterfaceOrientations)]) {
         return [self.orientationDelegate supportedInterfaceOrientations];

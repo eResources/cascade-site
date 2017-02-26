@@ -69,6 +69,9 @@
     <Import Label="Shared" Project="CordovaApp.projitems" />
     <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
     <ItemGroup>
+        <ProjectReference Include="..\..\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj" />
+    </ItemGroup>
+    <ItemGroup>
         <Reference Include="BatteryStatus">
             <HintPath>plugins/cordova-plugin-battery-status/BatteryStatus.winmd</HintPath>
             <IsWinMDFile>true</IsWinMDFile>
