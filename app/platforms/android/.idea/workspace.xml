@@ -204,8 +204,8 @@
     <leaf />
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="$USER_HOME$/android_keys/play_store.jks" />
-    <option name="KEY_ALIAS" value="cascade_app" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/android_keys/cascade-app.keystore" />
+    <option name="KEY_ALIAS" value="cascade-app" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
@@ -2081,7 +2081,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/android_keys/play_store.jks" />
+    <property name="last_opened_file_path" value="$USER_HOME$/android_keys/cascade-app.keystore" />
     <property name="FullScreen" value="true" />
     <property name="device.picker.selection" value="0a3d7a1e" />
     <property name="show.do.not.ask.upgrade.gradle.plugin.version" value="2.2.0" />
